@@ -1,0 +1,57 @@
+Functional Programing (What to do)
+----------------------------------
+1.stream:
+2.Static metho refrences ClassName::method
+3.filter:(number-> number % 2 == 0)
+4.Lambda:number->number % 2 == 0 //simplified representation of a method
+5.map: (number-> number % number) //map one value to another value
+-----------------------------------
+6.reduce(intial value, function) //reduction
+7.distinct //distinct values
+8.sorted   //sorted
+9.Comparator.NaturalOrder and Comparator.reverseOrder and Custom sorting using Comparator.comparing(Lambda)
+10.Collecting from stream // stream.collect(Collectors.toList())
+11.Intermidiate operation //that operate on stream and return stream
+12.Terminal operation //return some thing other than stream infact it convert stream to some thing other
+------------------------------------
+Functional Interface
+13.Condition is basically Predicate basically a function interface with only one abstract method //filter(predicate)
+14.Function is bacically that get one input and return one output //map(function)
+15.Consumer is bacically that get one input and consume //forEach(consumer)
+16.Binary Operator that ger aggregate and next value // reduce(accumulator)
+17.Behavior parameterization //passing the logic to function
+18.Funtion are now first class citizen in java
+19.Supplier // no input just provide some output // ()->2; // only have get method
+20.Unary Operator // operate only on one input // (x)->x*2; // only have apply method
+21.BiPredicate, BiFunction, BiConsumer //two input 
+22.For all of above There are seperate interface for primitive types for efficiency
+23.Type of parameter can be added to lamda expression
+24.Method references can be call for non static method
+----------------------------------------
+25.All Match //if all matches the condition
+26.None Match //if not all matches the condition
+27.Any Match //if Any matches the condition
+28.Comparing and thenComparing 
+29.skip and limit //to skip and limit
+30.takewhile(predicate) //till predicate condition
+31.dropWhile //opposite of takeWhile
+32.max and min 
+33.orElse //default it predicate does not find any similar
+34.findFirst //first element that match certain predicate
+34.findAny //any element that match certain predicate
+35.sum, average and count
+36.Collector sub function
+----------------------------------------------
+37.Stream.of //to create stream directly
+38.To avoid boxing and unboxing of primitive type create stream from arrays this will also benefit to perform many primitive function directly
+39.IntStream
+40.Peek method is to see the stream without effecting its value
+-----------------------------------------------
+41.FlatMap  //flattening the stream
+42.Higher order function is a function that return a function
+43.Intermidiate operations are lazy
+44.Parallelization
+-----------------------------------------------
+Mulitple function of functional programming are added to common collection like list, set and map
+
+  
